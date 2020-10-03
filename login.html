@@ -1,0 +1,118 @@
+<html>
+<head>
+
+<style>
+
+body{
+margin:0%;
+padding:0%;
+background-image:url("login1.svg");
+background-repeat:no-repeat;
+background-position: center;
+background-size:contain;
+background-color:  #E38EEC;
+}
+
+img{
+height:60px;
+width:60px;
+top:15%;
+left:56%;
+position:absolute;
+}
+
+img:hover{
+height:75px;
+width:75px;
+}
+
+.div1{
+padding:60px;
+background-color:#F2F3EF;
+border-radius:10px;
+height: 95px;
+width:185px;
+}
+
+#p{
+top:4%;
+left:55%;
+position:absolute;
+font-family: "Lucida Console", Courier, monospace;
+font-size:30px;
+color:#DC63CD;
+background-color:white;
+border-style:double;
+border-radius:5px;
+border-color:black;
+}
+
+#p:hover{
+border-color: #DC63CD;
+color: black;
+}
+
+.container{
+top:20%;
+left:47%;
+position:absolute;
+}
+
+.input:focus{
+outline:none;
+border-radius:9px;
+border:2px solid #DC63CD;
+}
+
+.input{
+padding:15px;
+height:30px;
+width:190px;
+font-size:15px;
+background:transparent;
+border:none;
+border-bottom:1px solid #DC63CD;
+border-radius:9px;
+margin-bottom:15px;
+text-align:center;
+}
+
+.input:hover{
+border-bottom:3px solid #DC63CD;
+}
+
+.btn{
+height:25px;
+width:80px;
+border-radius:15px;
+margin-left:48.5px;
+border: 2px solid #DC63CD;
+border-style:dotted;
+font-size:17px;
+}
+
+.btn:hover{
+outline:none;
+border-style: double;
+background-color:2px solid #DC63CD;
+}
+
+</style>
+<title> Login-Pista-Gram </title>
+</head>
+<body>
+<h id="p">LOGIN<br></h>
+<div class="container">
+<div class="div1">
+<form onsubmit="validateUser();">
+<input type="text" id="user" name="username" class="input" placeholder="Username" /><br>
+<input type="password" id="pwd" name="password" class="input" placeholder="Password" /><br>
+<input type="submit" class="btn" value="Submit" />
+</form>
+</div>
+</div>
+<img src="user.svg" class="img">
+<script src="render.js"></script>
+
+</body>
+</html>
